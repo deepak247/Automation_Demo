@@ -1,6 +1,7 @@
 package com.qa.Utils;
 
 import java.io.File;
+import java.nio.channels.SelectableChannel;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.Date;
@@ -37,6 +38,12 @@ public class Screenshot {
         	System.out.println("Failed to capture screenshot: " + e.getMessage());
 		}
         return filePath;
+	}
+	
+	public void dropdownbyIndex(WebElement element, int index) {
+		
+		Select select = new Select(element);
+		select.selectByIndex(index);
 	}
 
 }
