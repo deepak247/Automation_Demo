@@ -1,0 +1,4 @@
+com\qa\pages\LoginPage.class
+com\qa\pages\Homepage.class
+com\qa\Utils\Screenshot.class
+com\qa\Drivermanager\Drivermanager.class
